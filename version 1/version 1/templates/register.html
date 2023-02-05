@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>register</title>
+</head>
+<body>
+  <form action="{{url_for('register')}}" method="POST">
+    <div class="container">
+      <h1>Register</h1>
+      <p>fill in this form to register pet</p>
+      <hr>
+      <label for="name"><b>Owner Name</b></label>
+      <input type="text" placeholder="Enter name" name="name" id="forms" required><br>
+
+      <label for="pnum"><b>Phone Number</b></label>
+      <input type="text" placeholder="Enter phone number" name="pnum" id="forms" required><br>
+
+      <label for="type"><b>Type of Animal</b></label>
+      <input type="text" placeholder="Enter type" name="animaltype" id="forms" required><br>
+
+      <label for="breed"><b>Breed</b></label>
+      <input type="text" placeholder="Enter Email" name="breed" id="forms" required><br>
+  
+      <label for="pname"><b>Pet Name</b></label>
+      <input type="text" placeholder="Enter Pet name" name="pname" id="forms" required><br>
+      <br>
+      <button type="submit" class="registerbtn">Register</button>
+    </div>
+  </form>
+  <br>
+  <p>Want to edit existing pet details</p>
+      <a href="edit"><button type="submit" class="registerbtn">edit</button></a>
+  <p>Want to delete pet details</p>
+      <a href="delete"><button type="submit" class="registerbtn">delete</button></a>
+  <p>Want to view pet details</p>
+      <a href="display"><button type="submit" class="registerbtn">display</button></a>
+</body>
+</html>

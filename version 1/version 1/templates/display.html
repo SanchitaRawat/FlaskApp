@@ -1,0 +1,17 @@
+
+<p>
+    All pet data
+<ul>
+    {% for i in records %}
+      <li>{{i}}</li>
+    {% endfor %}
+  </ul>
+</p>
+<div>
+  <p>Want to edit existing pet details</p>
+      <a href="edit"><button type="submit" class="registerbtn">edit</button></a>
+  <p>Want to delete pet details</p>
+      <a href="delete"><button type="submit" class="registerbtn">delete</button></a>
+  <p>Want to register new pet details</p>
+      <a href="register"><button type="submit" class="registerbtn">register</button></a>
+</div>

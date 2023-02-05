@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>Want to delete pet details</title>
+</head>
+<body>
+    <form action="{{url_for('delete')}}" method="POST">
+        <div class="container">
+            <h1>delete</h1>
+            <p>delete owner details</p>
+            <hr>
+            
+            <label for="name"><b>Owner Name</b></label>
+            <input type="text" placeholder="Enter name" name="name" id="myforms" required><br>
+            <button type="submit" class="registerbtn">edit</button>
+          </div>
+    </form>
+</body>
+</html>
+

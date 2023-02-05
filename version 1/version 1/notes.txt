@@ -1,0 +1,4 @@
+singleton
+
+__call__
+__new__
