@@ -4,16 +4,12 @@ from flask import Flask,render_template,request,redirect,url_for
 from flask_wtf import FlaskForm
 from wtforms import (StringField,SubmitField)
 from wtforms.validators import DataRequired
-import logging
+from petlogger import *
  
 
 app=Flask(__name__)
 app.config['SECRET_KEY']="mysecretkey"
-logging.basicConfig(filename='app.log', level=logging.INFO,
-                    format='%(asctime)s %(levelname)s %(name)s %(message)s')
-logger = logging.getLogger(__name__)
-
-
+logger = PetLogger.getLogger(__name__)
 
 class PetInfoForm(FlaskForm):
     name=StringField("owner name")
